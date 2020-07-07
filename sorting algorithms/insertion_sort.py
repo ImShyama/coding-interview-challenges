@@ -7,7 +7,7 @@ def swap(array, i, j):
 
 # Insertion sort function which sort the array
 def insertion_sort(array):
-    for i in range(0, len(array)):
+    for i in range(1, len(array)):
         j = i
         while j > 0 and array[j-1] > array[j]:
             swap(array, j-1, j)
@@ -15,6 +15,6 @@ def insertion_sort(array):
 
 
 # Creating list and calling insertion sort function
-array = [2, 5, 10, 4, 6]
+array = [11, 5, 10, 4, 6]
 insertion_sort(array)
 print(array)
